@@ -1,0 +1,222 @@
+*{
+    color: #707070;
+}
+.primary-text{
+    color: #0071bc;
+}
+.secondary-text{
+    color: #707070;
+}
+.primary-bg{
+    background-color: #0071bc;
+}
+.bg-custom-warning{
+    background-color: #BA002A;
+}
+.text-custom-warning{
+    color: #BA002A;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.border-gray{
+    border: solid 1px #b5b5b5 !important;
+}
+.primary-border-bottom{
+    border-bottom: solid 3px #0071bc !important;
+}
+@media only screen and (max-width: 1024px){
+    .pc-only{
+        display: none !important;
+    }
+}
+/* Login Page CSS  */
+
+html,
+body,
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.login-container{
+    width: 100%;
+    height: 100%;
+}
+.login-panel{
+    width: 80%;
+    height: 500px;
+}
+.left-panel{
+    width: 50%;
+    height: 100%;
+    background-color: #0071bc;
+}
+.right-panel{
+    width: 50%;
+    background-color: #f5f6f7;
+    padding: 100px 50px;
+}
+.login-title{
+    padding-bottom: 10px;
+    border-bottom: solid 3px #0071bc;
+}
+.custom-input{
+    border: solid 1px #0071bc;
+}
+.custom-input:focus{
+    border: solid 1px #0071bc;
+    border-radius: 0;
+    outline: none;
+}
+.custom-input::placeholder{
+    color: #0071bc;
+}
+.custom-btn{
+    border: none;
+    cursor: pointer;
+}
+.custom-btn:hover{
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+    .mobile-login-container{
+        display: none !important;
+    }
+}
+.mobile-login{
+    background-color: #f5f6f7;
+}
+.login-btn-mobile{
+    border-radius: 20px;
+    border: solid 2px #0071bc;
+    background: transparent;
+    color: #0071bc !important;
+}
+.login-btn-mobile:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+/* Dashboard CSS */
+.container-fulid{
+    height: 100%;
+}
+.sidebar{
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    background-color: #f5f6f7;
+}
+.content-container{
+    width: calc(100% - 250px);
+    height: 100%;
+}
+.sidebar-nav .nav-link{
+    padding-left: 0;
+    border-bottom: solid 3px #d1d1d1;
+    position: relative;
+}
+.sidebar-nav .nav-link.active::after{
+    content: "\003E";
+    color: #0071bc;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.nav-link.active{
+    color: #0071bc;
+}
+.content-container{
+    padding: 90px 20px 30px;
+}
+.content-header{
+    border-bottom: solid 3px #0071bc;
+}
+.table th{
+    border-top: none;
+}
+#timeCardModal,
+#timeCardEditModal,
+#employeeModal,
+#projectModal,
+#projectEditModal{
+    margin-top: 10% !important;
+}
+.modal-content{
+    border-radius: 0;
+}
+.custom-select{
+    border-radius: 0;
+    border: solid 1px #b5b5b5;
+}
+.custom-select:focus{
+    box-shadow: none;
+    outline: none;
+}
+.boder-bottom-input{
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 2px #b5b5b5;
+}
+.boder-bottom-input:focus{
+    outline: none;
+}
+.time-period,
+.modal-content .total-hour,
+.modal-content .overtime{
+    width: 47%;
+}
+.modal-footer input:focus,
+.modal-footer button:focus{
+    outline: none;
+}
+/* datepicker customization css */
+.datepicker-modal{
+    bottom: auto !important;
+}
+.datepicker-date-display{
+    background-color: #0071bc;
+}
+.datepicker-date-display .date-text{
+    color: white;
+}
+.datepicker-calendar-container .datepicker-cancel,
+.datepicker-calendar-container .datepicker-done{
+    color: #0071bc;
+}
+.datepicker-table td.is-selected{
+    background-color: #0071bc;
+    color: #ffffff !important;
+}
+.datepicker-controls .select-month input{
+    width: 90px;
+}
+.datepicker-table td.is-today {
+    color: #0071bc;
+}
+.datepicker-controls{
+    margin: 0;
+}
+/* timecard CSS */
+.timecard{
+    width: 325px;
+    margin: auto;
+}
+@media only screen and (max-width: 324px){
+    .timecard{
+        max-width: 100%;
+    }
+}
+.time-input{
+    width: 40px !important;
+    padding-top: 10px;
+}
+.timecard span{
+    height: 30px;
+    line-height: 35px;
+}
+.content-footer .pagination{
+    justify-content: center;
+}
