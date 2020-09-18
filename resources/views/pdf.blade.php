@@ -145,7 +145,7 @@
 							@endif
 							@if($work_day->format('N') == 6 || $work_day->format('N') == 7)
 							@else
-								@if(count($dates) == 1 )
+								@if(count($dates) == 1  || count($dates) == 0)
 									<tr>
 										<td></td>
 										<td></td>
@@ -296,7 +296,7 @@
 
 							@if($work_day->format('N') == 6 || $work_day->format('N') == 7)
 							@else
-								@if(count($dates) == 1)
+								@if(count($dates) == 1 || count($dates) == 0)
 									<tr>
 										<td></td>
 										<td></td>
