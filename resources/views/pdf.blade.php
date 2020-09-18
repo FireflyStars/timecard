@@ -121,12 +121,12 @@
 									@endif
 								@endforeach
 							@else
-									<tr class="t_header">
-										<td>Job Number</td>
-										<td>{{ $work_day->format('D') }} <span class="gray font-light">{{ $work_day->format('M d, Y') }}</span></td>
-										<td>Reg</td>
-										<td>OT</td>
-									</tr>
+								<tr class="t_header">
+									<td>Job Number</td>
+									<td>{{ $work_day->format('D') }} <span class="gray font-light">{{ $work_day->format('M d, Y') }}</span></td>
+									<td>Reg</td>
+									<td>OT</td>
+								</tr>
 								@if($work_day->format('N') == 6 || $work_day->format('N') == 7)
 									<tr class="weekend_content">
 										<td></td>
@@ -142,30 +142,53 @@
 										<td></td>
 									</tr>
 								@endif
-
 							@endif
-
 							@if($work_day->format('N') == 6 || $work_day->format('N') == 7)
 							@else
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>								
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>								
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>	
-							@endif							
+								@if(count($dates) == 1 )
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>								
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>								
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+								@endif
+								@if(count($dates) == 2)
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+								@endif
+								@if(count($dates) == 3)
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+								@else
+								@endif
+							@endif
 						@endforeach
 					</tbody>
 				</table>
@@ -273,24 +296,49 @@
 
 							@if($work_day->format('N') == 6 || $work_day->format('N') == 7)
 							@else
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>								
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>								
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>	
+								@if(count($dates) == 1)
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>								
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>								
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+								@endif
+								@if(count($dates) == 2)
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+								@endif 
+								@if(count($dates) == 3)
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>	
+								@else
+								@endif
 							@endif									
 						@endforeach
 					</tbody>
